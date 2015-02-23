@@ -13,5 +13,6 @@ Install
 To do
 =====
 
-Karma should be included and configured
+Karma should be included and configured.
+
 Travis should be configured in order to work with karma properly.

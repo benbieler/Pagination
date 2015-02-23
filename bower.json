@@ -1,0 +1,12 @@
+{
+  "name": "sen-pagination-development",
+  "version": "0.0.0",
+  "description": "Development repository for the sententiaregum pagination using angular.js",
+  "dependencies": {
+    "angular": "~1.2.6",
+    "angular-route": "~1.2",
+    "jquery": "~2.1.0",
+    "bootstrap": "~3.1",
+    "angular-resource": "~1.2"
+  }
+}

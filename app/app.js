@@ -3,8 +3,7 @@
 var appModule = angular.module('sen.pagination.dev', ['ngRoute', 'ngResource']);
 appModule.controller('senPagCtrl', function($scope) {
 	$scope.users = [],
-	$scope.numPerPage = 10
-	$scope.maxSize = 5;
+	$scope.amountPerPage = 10;
 
 	$scope.users = function(){
 		$scope.users = [

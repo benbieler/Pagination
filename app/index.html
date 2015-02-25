@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr" ng-app="sen.pagination.dev">
+<html lang="en-US" dir="ltr" ng-app="pagination">
     <head>
         <title>Sententiaregum Pagination Development</title>
         <link rel="stylesheet" type="text/css" media="all" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
     </head>
     <body>
         <h1>Sententiaregum Pagination Development</h1>
@@ -13,9 +14,17 @@
         <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="../bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
         <script type="text/javascript" src="app.js"></script>
 
         <!-- Custom directory 'userpagination'-->
-        <pagination list-id="user-list"></pagination>
+        <pagination list-id="user-list">
+            <button ng-click="showTen()">
+              10
+            </button>
+            <button ng-click="showTwenty()">
+              20
+            </button>
+        </pagination>
     </body>
 </html>

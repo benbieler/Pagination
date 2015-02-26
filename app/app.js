@@ -72,20 +72,18 @@ appModule.directive('pagination', function(){
         restrict: 'E',
         link: function(scope, el, attr){
             scope.buildTemplateAlias = function () {
-                return 'partials/user-list.html'; // todo: make template configurable
+                return 'partials/user-list.html';
+
+                scope.amount = attr['amount'];
+                if(scope.amount == 10){
+                    users:slice(0, 9);
+                    alert("10 was selected :)");
+                }else if(scope.amount == 20){
+                    users:slice(0, 19);
+                }
+                // todo: make template configurable
             };
-            scope.showTen = function(){
-                return {
-                    users:slice(0, 9)
-                }
-                
-            }
-            scope.showTwenty = function(){
-                
-                return {
-                    users:slice(0, 19)
-                }
-            }
+
         },
         replace: true,
         template: '<ng-include src="{{ buildTemplateAlias() }}"></ng-include>'
